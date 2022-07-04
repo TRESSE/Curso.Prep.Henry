@@ -69,6 +69,6 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
     align-items: center;
     flex-direction:row;
     flex-direction:column;
-    background-color: aqua;
+    background-color: rgba(22, 241, 241, 0.856);
 }
 
