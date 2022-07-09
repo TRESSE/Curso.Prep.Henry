@@ -59,16 +59,16 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
 
-  // var newArray = array.map(function(e){
-  //   return cb(e)
-  // })
-  // return newArray;
+  var newArray = array.map(function(e){
+    return cb(e)
+  })
+  return newArray;
 
-  arrayCb = []
-  for (let i = 0; i < array.length; i++){
-    arrayCb.push(cb(array[i]));
-  }
-  return arrayCb
+  // arrayCb = []
+  // for (let i = 0; i < array.length; i++){
+  //   arrayCb.push(cb(array[i]));
+  // }
+  // return arrayCb
 
   // return array.map(function(e){
   //   return cb(e)
@@ -84,6 +84,10 @@ function filter(array) {
   //Tu código:
   
   return array.filter(e=> e[0] === "a")
+
+  // return array.filter(function(e){
+  //   return e[0] === "a";
+  // })
 
 }
 
