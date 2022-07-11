@@ -6,6 +6,7 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+
   let newObj = {
     nombre : nombre,
     edad : edad,
@@ -14,6 +15,15 @@ function crearGato(nombre, edad) {
     }
   }
   return newObj
+  
+  // var gato = {
+  //   nombre:nombre,
+  //   edad:edad,
+  //   meow: function(){
+  //     return "Meow!"
+  //   }
+  // };
+  // return gato;
 }
 
 
@@ -22,9 +32,11 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+
   objeto[property] = null;
 
   return objeto
+
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -85,13 +97,17 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto.hasOwnProperty(propiedad)) {
-    return true
-  } else {
-    return false
+
+  if (objeto[propiedad]) {
+    return true;
   }
+  return false;
 
-
+  // if (objeto.hasOwnProperty(propiedad)) {
+  //   return true
+  // } else {
+  //   return false
+  // }
 }
 
 function verificarPassword(usuario, password) {
@@ -99,11 +115,14 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario.password === password) {
-    return true
-  } else {
-    return false
-  }
+
+  return usuario["password"] === password;
+
+  // if (usuario.password === password) {
+  //   return true
+  // } else {
+  //   return false
+  // }
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
